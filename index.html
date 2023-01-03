@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+    <title>Epochalypse?</title>
+</head>
+
+<body onload="getCurrentTime()">
+    <div class="big">
+        <h1>
+            Has the <a href="https://en.wikipedia.org/wiki/Year_2038_problem">Epochalypse</a> happened yet?
+        </h1>
+    </div>
+    <div class="primary">
+    </div>
+    <div>
+        <table class="timetable">
+            <tr>
+                <td>
+                    Current Unix Time (seconds) since <a href="https://en.wikipedia.org/wiki/Unix_time">epoch</a>:
+                </td>
+                <td class="time" id="locale-unix">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Current Locale Time:
+                </td>
+                <td class="time" id="locale">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Current UTC Unix Time:
+                </td>
+                <td class="time" id="utc-unix">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Current UTC Time:
+                </td>
+                <td class="time" id="utc">
+                </td>
+            </tr>
+        </table>
+        </h2>
+    </div>
+</body>
+
+</html>
