@@ -15,11 +15,17 @@ body {
     text-align: center;
     width: 80%;
     table-layout: fixed;
+    border: 1px solid black;
     border-collapse: collapse;
     border-spacing: 0;
-    border: 1px solid #ccc;
     margin: 0 0 1em 0;
     font-size: 1em;
     line-height: 1.5em;
     border-radius: 10%;
+}
+
+.timetable td {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0.5em;
 }
