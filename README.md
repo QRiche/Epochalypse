@@ -3,3 +3,4 @@ A simple website to track the ["Year 2038 Problem"](https://en.wikipedia.org/wik
 
 ### Motivation
 - Purely to practice Javascript
+- Build a vanilla page
