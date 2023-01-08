@@ -27,6 +27,7 @@
         <table class="timetable">
             <tr>
                 <th>
+                    Current Time
                 </th>
                 <th>
                     Value (seconds)
@@ -37,7 +38,7 @@
             </tr>
             <tr>
                 <td>
-                    Current Unix Time:
+                    Locale Unix Time:
                 </td>
                 <td id="locale-unix">
                 </td>
@@ -46,14 +47,17 @@
             </tr>
             <tr>
                 <td>
-                    Current Locale Time:
+                    Locale Time:
                 </td>
                 <td id="locale">
+                </td>
+                <td>
+                    -
                 </td>
             </tr>
             <tr>
                 <td>
-                    Current UTC Unix Time:
+                    UTC Unix Time:
                 </td>
                 <td id="utc-unix">
                 </td>
@@ -62,13 +66,57 @@
             </tr>
             <tr>
                 <td>
-                    Current UTC Time:
+                    UTC Time:
                 </td>
                 <td id="utc">
+                </td>
+                <td>
+                    -
                 </td>
             </tr>
         </table>
         </h2>
+    </div>
+    <div class="main-text">
+        <br>
+        <h1>
+            FAQ
+        </h1>
+        <hr>
+        <details>
+            <summary>
+                What does this page do?
+            </summary>
+            <p>
+                This page displays the current time in UTC and your local time, as well as the Unix time in both. It
+                also displays whether or not the Unix time has passed the 32-bit limit of 2,147,483,647 seconds since
+                January 1, 1970 which is <a href="https://en.wikipedia.org/wiki/Year_2038_problem" target="_blank"
+                    rel="noopener noreferrer">the Year 2038 problem</a>.The 32-bit Epoch will stop working on
+                <b>January 19, 2038 at 3:14:07 AM UTC.</b>
+            </p>
+        </details>
+        <details>
+            <summary>
+                How does this page work?
+            </summary>
+            <p>
+                This page uses JavaScript to get the current time and Unix time, and then displays it in the table.
+                The JavaScript uses the <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date"
+                    target="_blank" rel="noopener noreferrer">
+                    Date object</a> to retrieve the current time.
+            </p>
+        </details>
+        <details>
+            <summary>
+                Will this page stop working?
+            </summary>
+            <p>
+                <a href="http://https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#number_encoding"
+                    target="_blank" rel="noopener noreferrer">No</a>. Javascript is designed to handle 64-bit numbers
+                regardless of web browser as specified by the ECMAScript standard.
+            </p>
+        </details>
     </div>
 </body>
 
