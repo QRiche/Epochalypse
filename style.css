@@ -11,6 +11,19 @@ body {
     font-weight: bold;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+code > a {
+    font-family: 'Noto Sans Mono', monospace;
+    background-color: lightgray;
+    color: red;
+    padding: 0.3em;
+    border-radius: 0.5em;
+}
+
 .timetable {
     text-align: center;
     width: 80%;
