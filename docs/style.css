@@ -18,10 +18,10 @@ body {
 
 code > a {
     font-family: 'Noto Sans Mono', monospace;
-    background-color: lightgray;
+    background-color: #E9E9E9;
     color: red;
-    padding: 0.3em;
-    border-radius: 0.5em;
+    padding: 1px;
+    border-radius: 0.35em;
 }
 
 .timetable {
